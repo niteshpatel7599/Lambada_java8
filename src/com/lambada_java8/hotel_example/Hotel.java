@@ -5,9 +5,8 @@ public class Hotel {
 	private int pricePerNight;
 	private int rating;
 	private HotelType hotelType;
-	
+
 	public Hotel(int pricePerNight, int rating, HotelType hotelType) {
-		super();
 		this.pricePerNight = pricePerNight;
 		this.rating = rating;
 		this.hotelType = hotelType;
@@ -36,6 +35,12 @@ public class Hotel {
 	public void setHotelType(HotelType hotelType) {
 		this.hotelType = hotelType;
 	}
+
+	@Override
+	public String toString() {
+		return "Hotel [pricePerNight=" + pricePerNight + ", rating=" + rating + ", hotelType=" + hotelType + "]";
+	}
+
 	
-	
+
 }
